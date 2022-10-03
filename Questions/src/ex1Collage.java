@@ -29,6 +29,63 @@ public class ex1Collage {
             System.out.println("you are not eligible for vote");
         }
     }
+    public static void question6(int a){
+        do{
+            System.out.println(a);
+            a++;
+            if(a==10){
+                System.out.println("The End..");
+                break;
+            }
+        }while(a>-2);
+    }
+    public static void question7(){
+        int po=0, ne=0, ze=0 ;
+        Scanner sc = new Scanner(System.in);
+        int y = 1;
+        while(y==1){
+            System.out.print("enter your no:-");
+            int no = sc.nextInt();
+            if(no>0){
+                po++;
+            } else if(no<0){
+                ne++;
+            }
+            else{
+                ze++;
+            }
+            System.out.print("enter 1 to continue, 0 to see result");
+            y = sc.nextInt();
+        }
+        System.out.println("Positives : " + po);
+        System.out.println("Negatives : " + ne);
+        System.out.println("Zeros : " + ze);
+    }
+    public static void question8(int a, int b){
+        System.out.println(Math.pow(a,b)); // a**b
+    }
+    public static void question9(int a, int b){
+        int no1 = Math.min(a,b);
+        int no2 = Math.max(a,b);
+        for(int i=no1;i>0;i--){
+            if(no1%i == 0){
+                if(no2%i == 0){
+                    System.out.println(i);
+                    break;
+                }
+            }
+        }
+    }
+    public static void question10(int a){
+        int no=a-2;
+        int x=1, b=1 ;
+        System.out.print("1 1 ");
+        while(no>0){
+            System.out.print(x+b+" ");
+            int u=b; b = x+b; x=u;
+            no--;
+        }
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter three nos:-");
@@ -41,5 +98,10 @@ public class ex1Collage {
         // question3(a,b);
         // System.out.println(question4(a));
         // question5(a);
+        // question6(a);
+        // question7();
+        // question8(a,b);
+        // question9(a,b);
+        // question10(a);
     }
 }

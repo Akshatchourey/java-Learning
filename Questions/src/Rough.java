@@ -1,5 +1,8 @@
+import java.util.*;
+
 public class Rough {
     public static void main(String[] args) {
-        System.out.println("akshat");
+        Scanner sc=new Scanner(System.in);
+        int n1 = sc.nextInt();
     }
 }
