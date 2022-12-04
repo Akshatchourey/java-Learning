@@ -1,21 +1,19 @@
-/*
+
 package com.compony;
 
 public class recursion {
-    public static void main(String[] args) {
-
-        private static int factorial(int n=6){
-            if(n == 1 || n ==0){
-                return 1;
-
-            }
-            int recResult = factorial(n-1);
-            int result = n * recResult;
-
-            return result;
-
+    private static int factorial(int a,int ans){
+        ans=ans*a;
+        if(a>1){
+            a--;
+            return factorial(a,ans);
         }
+        return ans;
+    }
+    public static void main(String[] args) {
+        int ans=1;
+        System.out.println(factorial(7,ans));
+
     }
 
 }
-        */
