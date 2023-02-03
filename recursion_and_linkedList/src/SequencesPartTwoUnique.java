@@ -1,22 +1,19 @@
-import javax.swing.event.ListDataEvent;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.HashSet;
 public class SequencesPartTwoUnique{
-    public static void fun(String str, int idx,String newstring,ArrayList<String>  arr){
+    public static void fun(String str, int idx,String newstring,HashSet<String> set){
         if(idx == str.length()){
-            for (String element : arr){
-                if(element.equals(newstring)){return;}
+            if(!set.contains(newstring)) {
+                set.add(newstring);
+                System.out.println(newstring);
             }
-            arr.add(newstring);
-            System.out.println(newstring);
-            return;}
+            return;
+        }
         char newchar = str.charAt(idx);
-        fun(str,idx+1,newstring+newchar,arr);
-        fun(str,idx+1,newstring,arr);
+        fun(str,idx+1,newstring+newchar,set);
+        fun(str,idx+1,newstring,set);
     }
     public static void main(String[] args) {
-        ArrayList<String> arr = new ArrayList<String>();
-        fun("aabb",0,"",arr);
+        HashSet<String> set = new HashSet<>();
+        fun("aaa",0,"",set);
     }
 }

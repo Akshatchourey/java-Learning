@@ -9,6 +9,6 @@ public class Sebquences{
         fun(str,idx+1,newstring);
     }
     public static void main(String[] args) {
-        fun("aabb",0,"");
+        fun("aab",0,"");
     }
 }
