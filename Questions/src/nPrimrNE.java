@@ -22,5 +22,15 @@ public class nPrimrNE{
                 System.out.print(check+" ");
             }
         }
+        String check;
+        do{
+            System.out.print("\nenter the no you want to ree check :-");int no=sc.nextInt();
+            for(int t = 1; t<=no; t++){
+                if(no%t == 0){
+                    System.out.println(t);
+                }
+            }
+            System.out.print("Do you want to ree check y/n :-");check = sc.next();
+        }while(check.equals("y"));
     }
 }
