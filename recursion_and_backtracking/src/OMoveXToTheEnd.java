@@ -1,4 +1,4 @@
-public class MoveXToTheEnd{
+public class OMoveXToTheEnd {
     public static void fun(StringBuilder sb, int idx){
         if(idx == -1){
             System.out.println(sb);

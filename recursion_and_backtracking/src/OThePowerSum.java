@@ -1,4 +1,4 @@
-public class ThePowerSum {
+public class OThePowerSum {
     public static int fun(int x, int n, int c){
         int a = Math.toIntExact(Math.round(Math.pow(c,n)));
         if(x > a){

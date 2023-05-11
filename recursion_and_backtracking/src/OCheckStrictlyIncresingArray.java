@@ -1,4 +1,4 @@
-public class CheckStrictlyIncresingArray{
+public class OCheckStrictlyIncresingArray {
     public static boolean fun(int[] arr,int idx){
         if(arr.length-1==idx){
             return true;

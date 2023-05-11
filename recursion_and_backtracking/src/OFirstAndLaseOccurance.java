@@ -1,4 +1,4 @@
-public class FirstAndLaseOccurance {
+public class OFirstAndLaseOccurance {
     public static int first=-1;
     public static int last=-1;
     public static void fun(String  str, int idx,char element){

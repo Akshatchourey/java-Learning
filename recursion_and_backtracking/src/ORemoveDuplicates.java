@@ -1,4 +1,4 @@
-public class RemoveDuplicates {
+public class ORemoveDuplicates {
     public static boolean[] map= new boolean[26];
     public static void removeDup(String str,int idx,String newString){
         if(idx == str.length()){

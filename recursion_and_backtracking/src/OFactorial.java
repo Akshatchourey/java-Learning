@@ -1,4 +1,4 @@
-public class Factorial {
+public class OFactorial {
     /*public static int rec(int ans,int no){// ans=5*4*3*2.
         if(no==1){
             return ans;

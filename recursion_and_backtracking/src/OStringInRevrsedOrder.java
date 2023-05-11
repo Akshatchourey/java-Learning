@@ -1,4 +1,4 @@
-public class StringInRevrsedOrder {
+public class OStringInRevrsedOrder {
     public static void rev(String str,int idx){
         if(idx == 0){
             System.out.println(str.charAt(idx));

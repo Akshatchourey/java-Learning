@@ -1,4 +1,4 @@
-public class PermutationsOfAString{
+public class OPermutationsOfAString {
     public static void permutation(String str,String newPer){
         if(str.length() == 0){
             System.out.println(newPer);

@@ -1,4 +1,4 @@
-public class XToThePowerN {
+public class OXToThePowerN {
     // stack height = n+1
     /* public static int pow(int x, int n) {
         if (x == 0) {

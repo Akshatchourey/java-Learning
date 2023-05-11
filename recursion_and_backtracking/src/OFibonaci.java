@@ -1,4 +1,4 @@
-public class Fibonaci {
+public class OFibonaci {
     public static void fibo(int a, int b, int n){
         if(n == 2){
             return ;

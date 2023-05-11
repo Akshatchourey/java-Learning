@@ -1,5 +1,5 @@
 import java.util.HashSet;
-public class SequencesPartTwoUnique{
+public class OSequencesPartTwoUnique {
     public static void fun(String str, int idx,String newstring,HashSet<String> set){
         if(idx == str.length()){
             if(!set.contains(newstring)) {
