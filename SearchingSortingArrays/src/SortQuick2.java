@@ -100,11 +100,12 @@ public class SortQuick2{
         A.add(startE); A.addAll(B);
         return A;
     }
+
     public static void main(String[] args){
         ArrayList<Integer> asq = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of array:- "); int n = sc.nextInt();
-        System.out.println("Now enter n numbers:- ");
+        System.out.printf("Now enter %d numbers:- ", n);
         for(int i=0;i<n;i++){
             asq.add(sc.nextInt());
         }

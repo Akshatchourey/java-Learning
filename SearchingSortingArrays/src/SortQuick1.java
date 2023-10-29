@@ -44,7 +44,6 @@ public class SortQuick1 {
                 ans[u] = B[u-i-1];
             }
         }
-
         return ans;
     }
     public static void main(String[] args){
