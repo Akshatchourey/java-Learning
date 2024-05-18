@@ -10,7 +10,8 @@ class Node{
 public class Tree{
     static Scanner sc = new Scanner(System.in);
     static Queue<Node> myQueue = new LinkedList<>();
-    static int[] arr = {7,6,5,-1,-1,1,4,-1,-1,-1,2,8,-1,-1,3,-1,-1};
+//    static int[] arr = {7,6,5,-1,-1,1,4,-1,-1,-1,2,8,-1,-1,3,-1,-1};
+    static int[] arr = {1,2,4,-1,-1,5,-1,-1,3,6,-1,8,-1,-1,7,-1,-1};
     static int idx = 0;
 
     static Node createTreeUsingArray(){
