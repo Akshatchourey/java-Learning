@@ -42,7 +42,7 @@ public class SearchLinearAndBinary {
     }
     static int binarySearch(int[] arr, int searchNo){
         int low = 0; int mid; int high = arr.length-1;
-        while(low < high){
+        while(low <= high){
             mid = Math.floorDiv(low+high, 2);
             if(searchNo == arr[mid]){return mid;}
             else if(searchNo < arr[mid]){
