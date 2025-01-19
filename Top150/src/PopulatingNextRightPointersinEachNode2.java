@@ -1,14 +1,14 @@
 import java.util.HashMap;
 import java.util.Map;
 
-class Node{
+class RightNode {
     public int val;
-    public Node left;
-    public Node right;
-    public Node next;
-    public Node() {}
-    public Node(int _val){val = _val;}
-    public Node(int _val, Node _left, Node _right, Node _next){
+    public RightNode left;
+    public RightNode right;
+    public RightNode next;
+    public RightNode() {}
+    public RightNode(int _val){val = _val;}
+    public RightNode(int _val, RightNode _left, RightNode _right, RightNode _next){
         val = _val;
         left = _left;
         right = _right;
@@ -16,16 +16,16 @@ class Node{
     }
 };
 public class PopulatingNextRightPointersinEachNode2{
-    static Map<Integer, Node> myMap;
-    static void helper(Node root, int h){
+    static Map<Integer, RightNode> myMap;
+    static void helper(RightNode root, int h){
         if(root == null) return;
-        Node temp = myMap.getOrDefault(h, new Node());
+        RightNode temp = myMap.getOrDefault(h, new RightNode());
         temp.next = root;
         myMap.put(h, root);
         helper(root.left, h+1);
         helper(root.right, h+1);
     }
-    static Node connect(Node root){
+    static RightNode connect(RightNode root){
         myMap = new HashMap<>();
         helper(root,0);
         return root;
